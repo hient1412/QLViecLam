@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout" template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="VLTuyenDung" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp"/>
+    </definition>
+    
+    <definition name="home" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content" value="/WEB-INF/jsp/home.jsp" />
+    </definition>
+    
+    <definition name="company" extends="baseLayout">
+        <put-attribute name="title" value="Công ty" />
+        <put-attribute name="content" value="/WEB-INF/jsp/company.jsp" />
+    </definition>
+    
+    <definition name="search" extends="baseLayout">
+        <put-attribute name="title" value="Tìm việc làm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/search.jsp" />
+    </definition>
+    
+    <definition name="candidates" extends="baseLayout">
+        <put-attribute name="title" value="Ứng viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/candidates.jsp" />
+    </definition>
+    <definition name="candidate-detail" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin ứng viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/candidate-detail.jsp" />
+    </definition>
+    
+    <definition name="job-detail" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin tin tuyển dụng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/job-detail.jsp" />
+    </definition>
+    
+    <definition name="company-detail" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin công ty" />
+        <put-attribute name="content" value="/WEB-INF/jsp/company-detail.jsp" />
+    </definition>
+    
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="header" value=""/>
+        <put-attribute name="footer" value=""/>
+        <put-attribute name="content" value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    
+    <definition name="registry" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="header" value=""/>
+        <put-attribute name="footer" value=""/>
+        <put-attribute name="content" value="/WEB-INF/jsp/registry.jsp" />
+    </definition>
+    
+    <definition name="registry-uv" extends="baseLayout">
+        <put-attribute name="title" value="Thêm thông tin ứng viên" />
+        <put-attribute name="header" value=""/>
+        <put-attribute name="footer" value=""/>
+        <put-attribute name="content" value="/WEB-INF/jsp/registry-uv.jsp" />
+    </definition>
+    
+    <definition name="registry-ntd" extends="baseLayout">
+        <put-attribute name="title" value="Thêm thông tin nhà tuyển dụng" />
+        <put-attribute name="header" value=""/>
+        <put-attribute name="footer" value=""/>
+        <put-attribute name="content" value="/WEB-INF/jsp/registry-ntd.jsp" />
+    </definition>
+    
+    <definition name="admin-view" extends="baseLayout">
+        <put-attribute name="title" value="Tổng quan admin" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-view.jsp"/>
+    </definition>
+    <definition name="company-confirm" extends="baseLayout">
+        <put-attribute name="title" value="Duyệt nhà tuyển dụng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/company-confirm.jsp"/>
+    </definition>
+    
+    <definition name="job-type" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý loại việc làm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/job-type.jsp"/>
+    </definition>
+    <definition name="job-type-edit" extends="baseLayout">
+        <put-attribute name="title" value="Sửa tên loại việc làm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/job-type-edit.jsp"/>
+    </definition>
+    <definition name="job-type-add" extends="baseLayout">
+        <put-attribute name="title" value="Thêm loại việc làm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/job-type-add.jsp"/>
+    </definition>
+    <definition name="admin-account" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-account.jsp"/>
+    </definition>
+    <definition name="admin-account-see" extends="baseLayout">
+        <put-attribute name="title" value="Xem chi tiết thông tin" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-account-see.jsp"/>
+    </definition>
+    <definition name="admin-account-edit" extends="baseLayout">
+        <put-attribute name="title" value="Sửa thông tin tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-account-edit.jsp"/>
+    </definition>
+    <definition name="admin-account-add" extends="baseLayout">
+        <put-attribute name="title" value="Thêm tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-account-add.jsp"/>
+    </definition>
+    <definition name="personal-info" extends="baseLayout">
+        <put-attribute name="title" value="Thông tin cá nhân" />
+        <put-attribute name="content" value="/WEB-INF/jsp/personal-info.jsp"/>
+    </definition>
+    <definition name="job-upload" extends="baseLayout">
+        <put-attribute name="title" value="Đăng tin tuyển dụng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/job-upload.jsp"/>
+    </definition>
+    <definition name="company-view" extends="baseLayout">
+        <put-attribute name="title" value="Quản lý tin tuyển dụng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/company-view.jsp"/>
+    </definition>
+    <definition name="list-job-upload" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách tin đã đăng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/list-job-upload.jsp"/>
+    </definition>
+    
+    <definition name="company-edit" extends="baseLayout">
+        <put-attribute name="title" value="Sửa thông tin nhà tuyển dụng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/company-edit.jsp"/>
+    </definition>
+    <definition name="admin-edit" extends="baseLayout">
+        <put-attribute name="title" value="Sửa thông tin cá nhân" />
+        <put-attribute name="content" value="/WEB-INF/jsp/admin-edit.jsp"/>
+    </definition>
+    
+    <definition name="job-upload-edit" extends="baseLayout">
+        <put-attribute name="title" value="Sửa tin tuyển dụng" />
+        <put-attribute name="content" value="/WEB-INF/jsp/job-upload-edit.jsp"/>
+    </definition>
+    
+    <definition name="candidate-edit" extends="baseLayout">
+        <put-attribute name="title" value="Sửa thông tin nhà ứng viên" />
+        <put-attribute name="content" value="/WEB-INF/jsp/candidate-edit.jsp"/>
+    </definition>
+
+    <definition name="stats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê - báo cáo" />
+        <put-attribute name="content" value="/WEB-INF/jsp/stats.jsp"/>
+    </definition>
+    <definition name="stats-job-type" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê tin theo loại việc làm" />
+        <put-attribute name="content" value="/WEB-INF/jsp/stats-job-type.jsp"/>
+    </definition>
+    <definition name="stats-account" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê tin theo loại tài khoản" />
+        <put-attribute name="content" value="/WEB-INF/jsp/stats-account.jsp"/>
+    </definition>
+    <definition name="stats-job-time" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê tin tuyển dụng theo thời gian" />
+        <put-attribute name="content" value="/WEB-INF/jsp/stats-job-time.jsp"/>
+    </definition>
+        
+    <definition name="job-apply" extends="baseLayout">
+        <put-attribute name="title" value="Ứng tuyển" />
+        <put-attribute name="content" value="/WEB-INF/jsp/job-apply.jsp" />
+    </definition>   
+    <definition name="uv-apply" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách ứng viên ứng tuyển" />
+        <put-attribute name="content" value="/WEB-INF/jsp/uv-apply.jsp" />
+    </definition>   
+    
+    <definition name="list-apply" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách công việc đã ứng tuyển" />
+        <put-attribute name="content" value="/WEB-INF/jsp/list-apply.jsp" />
+    </definition>   
+        
+</tiles-definitions>

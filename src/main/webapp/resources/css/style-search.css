@@ -1,0 +1,273 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 18, 2022, 12:09:56 AM
+    Author     : DELL
+*/
+body,html {
+    font-size: 16px;
+}
+a {
+    color: #FF6F61;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #000000;
+    outline: none;
+    text-decoration: none;
+}
+
+
+.title__job--main {
+    display: flex;
+    align-items: center;
+}
+
+.title__job--main .link {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.title__job--main .icon {
+    margin-right: 20px;
+}
+
+.title__job--main .text a {
+    font-weight: bold;
+    color: #000000;
+}
+
+.title__job--des {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.job__search {
+    display: flex;
+}
+
+.job__search--box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 20%;
+    padding: 10px;
+    margin: 0 25px 15px 0;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    border: solid 1px #ffffff;
+    transition: .4s;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.job__search--box:hover .job__search--list {
+    display: block;
+
+}
+
+
+.job__search--list {
+    padding: 10px 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: solid 1px #cecece;
+    box-shadow: #d1d1d1;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+    display: none;
+    transition: 0.6s;
+
+}
+
+.job__search--list .list-option-item {
+    font-size: 15px;
+    padding: 15px 5px;
+    margin: 1px 0;
+}
+
+.job__search--list .list-option {
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+div .list-option-item:first-child {
+    background-color: rgb(212, 212, 212);
+    color: #ffffff;
+}
+
+
+.job__search--list .list-option-item:hover {
+    background-color: #8d8d8d;
+    color: #ffffff;
+}
+
+.job__search--list input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: solid 2px rgba(61, 61, 61);
+}
+
+.job__search--box:hover {
+    border: solid 1px #ff6f61;
+}
+
+.job__search--icon i {
+    transition: 0.6s;
+}
+
+.job__search--box:hover .job__search--icon i {
+    transform: rotate(180deg);
+}
+
+.job__search--item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.job__info {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.job__info--title {
+    display: flex;
+    padding: 10px 0 15px;
+    border-bottom: solid 1px #d1d1d1;
+    margin-left: 10px;
+}
+
+.job__info--title p {
+    color: #ff6f61;
+    font-weight: bold;
+    margin: 0 6px;
+}
+
+.job__info--filter {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: solid 1px #d1d1d1;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.job__info--filter .title {
+    opacity: 0.5;
+}
+
+.option__checkbox .checkbox {
+    margin-left: 60px;
+    cursor: pointer;
+
+    /* display: none; */
+}
+
+.job__info--container--item {
+    display: flex;
+    align-items: center;
+    min-height: 200px;
+    background-color:#f2fbf6;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+
+.job__info--container--item .avatar__job {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    background-color: #ffffff;
+}
+
+.job__info--container--item .avatar__job img {
+    width: 100px;
+    height: 100px;
+}
+
+.info_company {
+    max-width: 650px;
+}
+
+.info_company__item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info_company .name__job {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.info_company .name__job i {
+    color: #FF6F61;
+}
+
+.info_company .name__company {
+    font-size: 15px;
+}
+
+.info_company .other {
+    display: flex;
+    font-size: 13px;
+
+}
+
+.info_company__item {
+    margin-bottom: 15px;
+}
+
+.other .other__item {
+    padding: 3px 10px;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.job__info--container--item .date {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+}
+
+.job__info--container--item .favorite {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 20px;
+    transition: transform .2s;
+    color: #FF6F61;
+    cursor: pointer;
+
+}
+
+.job__info--container--item .favorite:hover {
+    transform: scale(1.5);
+}
+
+.job__info--container--item .date p {
+    font-weight: bold;
+    color: #FF6F61;
+    margin: 0 4px;
+}
