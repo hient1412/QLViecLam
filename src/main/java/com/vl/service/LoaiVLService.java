@@ -13,6 +13,7 @@ import java.util.List;
  */
 public interface LoaiVLService {
     List<LoaiVL> getLoaiVL(int page);
+    List<LoaiVL> getLoaiVLByName(String name);
     LoaiVL getLoaiVLByID(int id);
     boolean deleteLoaiVL(int id);
     boolean updateLoaiVL(LoaiVL vl);
