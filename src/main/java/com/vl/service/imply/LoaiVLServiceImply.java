@@ -27,6 +27,11 @@ public class LoaiVLServiceImply implements LoaiVLService{
     }
 
     @Override
+    public List<LoaiVL> getLoaiVLByName(String name) {
+        return this.loaiVLRepository.getLoaiVLByID(name);
+    }
+
+    @Override
     public LoaiVL getLoaiVLByID(int id) {
         return this.loaiVLRepository.getLoaiVLByID(id);
     }
